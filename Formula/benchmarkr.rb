@@ -11,7 +11,7 @@ class Benchmarkr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_darwin_amd64.tar.gz"
-      sha256 "6f4adc9d7176120db6d3174afdb4e26b4c6197d2b1751a1cf9740eb78c62f7a3"
+      sha256 "eefde56f62c4f7c78d6e5a161134bc093b41d28453a1610a2982897e79d5ac54"
 
       define_method(:install) do
         bin.install "benchmarkr"
@@ -19,7 +19,7 @@ class Benchmarkr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_darwin_arm64.tar.gz"
-      sha256 "f23fd744a8ee8624d6246a24bd8d807f35b30bd943f3a5c7bfdfcaea979cec1e"
+      sha256 "2a16d7a229bd606c22645be01a3e0fef5e8970c21ad1eec8612bc7846254d7a2"
 
       define_method(:install) do
         bin.install "benchmarkr"
@@ -30,14 +30,14 @@ class Benchmarkr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_linux_amd64.tar.gz"
-      sha256 "54d89d2a8462a8227b4eaac300e6d10feeedf3d88661254a2479efbd6c65fd4f"
+      sha256 "6ca0f6d3547b0509c0b56c7f0f4ddd8b0d06f4a62a8a172a5ec2106797a4fc50"
       define_method(:install) do
         bin.install "benchmarkr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_linux_arm64.tar.gz"
-      sha256 "d0f9481c44c46f0ad43add5fca6c57eef80cca7d3a4b2933b225500adac5a5cd"
+      sha256 "4e50eead4789dce8b1720311ac5d09879af33459ea12abe9bbfa0df1702b27ab"
       define_method(:install) do
         bin.install "benchmarkr"
       end
