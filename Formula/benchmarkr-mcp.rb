@@ -11,7 +11,7 @@ class BenchmarkrMcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr-mcp_darwin_amd64.tar.gz"
-      sha256 "c861213c5617b403a0a4e1881ba51ae26272a05918d85df984243b14f496075f"
+      sha256 "67213a88eb360bf7b6fba9db59e9ed547b8396ab9f408035f2ed3f8ad2f6c7c0"
 
       define_method(:install) do
         bin.install "benchmarkr-mcp"
@@ -19,7 +19,7 @@ class BenchmarkrMcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr-mcp_darwin_arm64.tar.gz"
-      sha256 "417bfe4ef53dfa7383ad829d90c2480f0b778175a1d07a2ff70bca63c0bdf0ee"
+      sha256 "a6cf8969b7af72fd568a7721fe4ccc9fb043bf2d78c03a472fceedba3221a81f"
 
       define_method(:install) do
         bin.install "benchmarkr-mcp"
@@ -30,14 +30,14 @@ class BenchmarkrMcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr-mcp_linux_amd64.tar.gz"
-      sha256 "4cfbea1f0a737e5697f52a838b804517d7d1d654890cff403a47bf11415baf61"
+      sha256 "86caf3ceebd1d62215c4646c789ffc60876600e0c628424ed40bd002f614a5b2"
       define_method(:install) do
         bin.install "benchmarkr-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr-mcp_linux_arm64.tar.gz"
-      sha256 "cd06a8cf95de9b34f9dd79e527860ad0c259a371a473045560df5335a9288577"
+      sha256 "59aaaf4fc79506181b1caa79517eb5edd54083bbb91d9782cb944c690de02d78"
       define_method(:install) do
         bin.install "benchmarkr-mcp"
       end
