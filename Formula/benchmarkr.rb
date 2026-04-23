@@ -5,21 +5,21 @@
 class Benchmarkr < Formula
   desc "API performance benchmarking from the command line"
   homepage "https://github.com/Mack-Overflow/api-bench"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_darwin_amd64.tar.gz"
-      sha256 "a2531b0b18cdbc9a71e9a2ba2d4e7ea1651eabec7b70ad44de9fcaf113d6580f"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr_darwin_amd64.tar.gz"
+      sha256 "ef290300cef2b1b3dd282ed924a3d5f47b899dba96485a733f41939bb59b56c8"
 
       define_method(:install) do
         bin.install "benchmarkr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_darwin_arm64.tar.gz"
-      sha256 "9a773df51b0211e06905c7b589cd4c5ba7cfd929190647ead1f97199ada28241"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr_darwin_arm64.tar.gz"
+      sha256 "c6f0575dc9bf1129c82d2e27f798b16eea914f3b9701217cf94169811a03165d"
 
       define_method(:install) do
         bin.install "benchmarkr"
@@ -29,15 +29,15 @@ class Benchmarkr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_linux_amd64.tar.gz"
-      sha256 "642c746ee261860b3ff25bc12d62f69956a76c4b73e2d8159d906176baed0e59"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr_linux_amd64.tar.gz"
+      sha256 "b6c12ea5997171dd879fb30044265a7eafe5d30699a1acd7475e28223b99d853"
       define_method(:install) do
         bin.install "benchmarkr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.2/benchmarkr_linux_arm64.tar.gz"
-      sha256 "a0746d3a542757748b5be8a61be5d553c88ad0b4966587fc0a06e7431ec1b54f"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr_linux_arm64.tar.gz"
+      sha256 "03d75f79c11f6117711819380c38f040d67ca087d469cb8dadfcdbcf43976ee9"
       define_method(:install) do
         bin.install "benchmarkr"
       end
