@@ -5,21 +5,21 @@
 class BenchmarkrMcp < Formula
   desc "MCP server for AI-driven API performance benchmarking"
   homepage "https://github.com/Mack-Overflow/api-bench"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr-mcp_darwin_amd64.tar.gz"
-      sha256 "40f81255e5cc2b70ba6c6c9a14742ad747f989b4487bf03576a96796f73f7faf"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.4/benchmarkr-mcp_darwin_amd64.tar.gz"
+      sha256 "72cb08d339b9aaebae44a534219a54f1740711b3b2fb69359ca63a4330613acd"
 
       define_method(:install) do
         bin.install "benchmarkr-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr-mcp_darwin_arm64.tar.gz"
-      sha256 "2d2dc79e44d70d169cdfcaf18a0b75cb76294da8e7f411530ba06a0a3c1afc7b"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.4/benchmarkr-mcp_darwin_arm64.tar.gz"
+      sha256 "13efdccd23ebe378eab910a4a49d9e172f76fa9cb49bdf76f3cfb3a2f77309c0"
 
       define_method(:install) do
         bin.install "benchmarkr-mcp"
@@ -29,15 +29,15 @@ class BenchmarkrMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr-mcp_linux_amd64.tar.gz"
-      sha256 "d025ec02481502004569913ed59048ff700fed8446480326b2856ed737af26ea"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.4/benchmarkr-mcp_linux_amd64.tar.gz"
+      sha256 "ee0a433819b4b1cd671356370c6492fb2f88e15db5e0b170636245e197195ed2"
       define_method(:install) do
         bin.install "benchmarkr-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.3/benchmarkr-mcp_linux_arm64.tar.gz"
-      sha256 "3b7e6c2c88a223cf6720587ab36a477f3d84ef7b593443c7416a050a2c1f638a"
+      url "https://github.com/Mack-Overflow/api-bench/releases/download/v0.1.4/benchmarkr-mcp_linux_arm64.tar.gz"
+      sha256 "1d718efdd71141451249e026ffd4758bd7c53f1533179a02e88d2408cd7890b6"
       define_method(:install) do
         bin.install "benchmarkr-mcp"
       end
